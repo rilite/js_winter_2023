@@ -24,7 +24,7 @@
     // 2. Виводимо результат
     if (priceProduct > amountMoney)
       document.write('Відмовляємо у покупці')
-    else if (priceProduct < amountMoney)
+    else if (priceProduct + priceLottery <= amountMoney)
       document.write(`Пропонуємо купити лотерею за ${priceLottery} грн.`)
     else 
       document.write(`Нажаль у вас не залишилось грошей для придбання лотереї за ${priceLottery} грн.`)

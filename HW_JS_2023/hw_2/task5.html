@@ -19,8 +19,8 @@
     const seconds = parseInt(prompt('Введіть кількість секунд від початку доби', '0'))
     
     //2.Знаходимо результат
-    let hours = parseInt(seconds / 3600)
-    let minutes = parseInt((seconds % 3600) / 60)
+    let hours = Math.floor(seconds / 3600)
+    let minutes = Math.floor((seconds % 3600) / 60)
 
     //3.Виводимо результат
     document.write(`Від початку доби пройшло ${seconds} секунд, що відповідає ${hours} годин(і/ам) та ${minutes} хвилин(і/ам)`)    
